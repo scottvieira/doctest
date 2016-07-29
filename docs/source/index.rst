@@ -19,14 +19,11 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   overview
-   resources
    licensing
    organizations
    usagestats
 
-   styleguide
-   
+      
 
 Indices and tables
 ==================
