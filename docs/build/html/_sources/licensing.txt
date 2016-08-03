@@ -1,4 +1,4 @@
-### Licensing User Guide
+# Licensing User Guide
 
 ### About CORAL Licensing
 
@@ -9,7 +9,7 @@ A component of Hesburgh Libraries locally developed ERM, CORAL Licensing provide
 
 
 
-###Component Overview
+### Component Overview
 
 CORAL Licensing has six major components in the primary navigation at the top of each page.
 
@@ -27,13 +27,13 @@ CORAL Licensing has six major components in the primary navigation at the top of
 
 
 
-# **Home**
+### **Home**
 
 Search has been placed on the *Home *page as the primary point of entry into the license records. The search runs against the fields license name, document name, and publisher/provider. The fields are defined in the next section as we look at creating a new license record.
 
 
 
-# **New License**
+### **New License**
 
 
 
@@ -69,7 +69,7 @@ Let us also assume that you have licensed a set of eBooks from Springer as well 
 
 
 
-## **Adding / Editing New License Record**
+### **Adding / Editing New License Record**
 
 
 
@@ -131,11 +131,11 @@ The license record has four sections located on the left-hand column; Documents,
 
 
 
-## **Documents**
+### **Documents**
 
 The Documents tab contains all the documents for each license record. Any document may be uploaded to the system including licenses, amendments, order forms, purchase requests, or any other important document.  Select 'upload new document' to begin.
 
-## **Adding New Documents**
+### **Adding New Documents**
 
 The 'upload new document' link opens the window on the right.  Here you can fill out the initial details of the document and upload the actual file. Document Name is the only required field.
 
@@ -187,7 +187,7 @@ The 'upload new document' link opens the window on the right.  Here you can fill
 
 
 
-## **Editing Documents**
+### **Editing Documents**
 
 
 
@@ -223,7 +223,7 @@ Once added the documents will display on the Documents tab sorted first by Docum
 
 
 
-## **Adding Expressions**
+### **Adding Expressions**
 
 
 
@@ -283,7 +283,7 @@ Expression Type:
 
 •     Third Party Archiving
 
-## **Adding Expressions**
+### **Adding Expressions**
 
 The 'add new expression' link opens the window on the right.  From this window you can add expressions for the documents that have been previously loaded.
 
@@ -305,7 +305,7 @@ The 'add new expression' link opens the window on the right.  From this window y
 
 
 
-## **Adding Display Notes**
+### **Adding Display Notes**
 
 
 
@@ -353,7 +353,7 @@ actual legal text can be quite confusing so the next step is to add a Display No
 
 
 
-## **Adding Display / Internal Notes**
+### **Adding Display / Internal Notes**
 
 The 'add/view display notes' link opens a window which allows you to enter multiple display notes. It also displays the Document Text on that same window so that you can refer back to it while adding the notes.  The sort order of multiple display notes can also be adjusted through this same window. The following figure shows a completed Display Notes window.
 
@@ -427,7 +427,7 @@ If you choose not to use the *Terms Tool Report *page you may turn it off as exp
 
 
 
-## **Completed Expression**
+### **Completed Expression**
 
 
 
@@ -481,7 +481,7 @@ The above figure is the completed expression with document text, qualifier and d
 
 
 
-## **SFX Links**
+### **SFX Links**
 
 
 
@@ -519,7 +519,7 @@ tab is meant to be used in conjunction with the Terms Tool and can be disabled a
 
 
 
-## **Attachments**
+### **Attachments**
 
 
 
@@ -561,7 +561,7 @@ For any resource there may be documents in addition to the actual license that a
 
 
 
-# **Licenses in Progress**
+### **Licenses in Progress**
 
 
 
@@ -593,7 +593,7 @@ The *Licenses in Progress *page will show the licenses that are not yet complete
 
 
 
-# **Expression Comparison**
+### **Expression Comparison**
 
 
 
@@ -667,7 +667,7 @@ The *Licenses in Progress *page will show the licenses that are not yet complete
 
 
 
-## **Terms Tool Report**
+### **Terms Tool Report**
 
 
 
@@ -737,7 +737,7 @@ The main points to remember for this page are that it displays expressions which
 
 
 
-## **Admin**
+### **Admin**
 
 
 
