@@ -1,4 +1,4 @@
-### Usage Statistics User Guide
+### **Usage Statistics User Guide**
 
 ### About CORAL Usage Statistics
 

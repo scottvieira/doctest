@@ -1,4 +1,4 @@
-### Organizations User Guide
+### **Organizations User Guide**
 
 ### About CORAL Organizations
 
