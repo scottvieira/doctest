@@ -17,13 +17,13 @@ Here is some text
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    licensing
    organizations
    usagestats
 
-      
+
 
 Indices and tables
 ==================
