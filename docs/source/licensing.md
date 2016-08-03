@@ -1,17 +1,15 @@
-**CORAL Licensing User Guide**
+### Licensing User Guide
 
-
-**About CORAL Licensing**
+### About CORAL Licensing
 
 A component of Hesburgh Libraries locally developed ERM, CORAL Licensing provides a way to store and access digital copies of current and expired license agreements and related documents as well as associated agreement metadata. The licensing module helps make library license agreements more accessible to personnel through select searchable metadata fields and assists institutions in tracking and using specific pieces of information included in legal agreements. CORAL Licensing is a flexible document management system, useful in anticipating a variety of agreements and institutional goals for managing agreements. The module allows users to identify license clauses most important to record and track from an institutional point of view. With related features like a clause comparison function, and ILL and course pack terms tools that can be implemented to deliver terms through other systems such as SFX, the CORAL Licensing module provides a way to make better use of permissions included in the license agreement.
-
 
 
 *Please note that screenshots and text in this document are just examples and do not necessarily reflect terms for a particular resource.*
 
 
 
-**Component Overview**
+###Component Overview
 
 CORAL Licensing has six major components in the primary navigation at the top of each page.
 
