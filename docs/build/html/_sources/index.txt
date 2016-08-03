@@ -6,27 +6,15 @@
 CORAL Documentation Tutorial
 =============================
 
-Another simple header
-=====================
-
-Here is some text
-
-  print 'hello'
-  >> hello
-
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
-   overview
-   resources
    licensing
    organizations
    usagestats
 
-   styleguide
-   
 
 Indices and tables
 ==================

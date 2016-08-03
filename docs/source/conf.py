@@ -47,6 +47,15 @@ source_suffix = '.rst'
 #
 # source_encoding = 'utf-8-sig'
 
+# add recommonmark configuration -----------
+#
+
+from recommonmark.parser import CommonMarkParser
+
+source_parsers = {'.md': CommonMarkParser}
+
+source_suffix = ['.rst', '.md']
+
 # The master toctree document.
 master_doc = 'index'
 
