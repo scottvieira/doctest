@@ -16,9 +16,9 @@ CORAL Organizations has three major components in the primary navigation at the 
 
 ## Home
 
-The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role. 
+The home screen contains a search on the left and a list of organizations on the right.  The up and down arrows in the table header can be used to sort the organizations by name, alias, parent, or role.
 
-![image alt text](image_0.png)
+![image alt text](img/image_0.png)
 
 There are four facets for search:
 
@@ -34,11 +34,11 @@ These facets can be used in conjunction.
 
 ## New Organization
 
-Organization Name? 
+Organization Name?
 
 image of Add New Organization screen
 
-Select New Organization from the main navigation to begin adding new organization records. 
+Select New Organization from the main navigation to begin adding new organization records.
 
 * **Name**:  Name of the organization (i.e. MetaPress, Sage Publications, etc). This is the only required field.
 
@@ -48,13 +48,13 @@ Select New Organization from the main navigation to begin adding new organizatio
 
 * **Role(s):  **the organization’s role. The values for this field can be customized through the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page.
 
-* **Account Details: **Account numbers or general descriptive info about a library’s account with the organization. 
+* **Account Details: **Account numbers or general descriptive info about a library’s account with the organization.
 
 * **Notes:** General notes.
 
 ### The Organization Record
 
-![image alt text](image_1.png)
+![image alt text](img/image_1.png)
 
 Here is an organization record for Cambridge Scientific Abstracts. The information on the record is split among five tabs. The sixth tab labeled Licenses appears when the CORAL Licensing module is installed and enabled.
 
@@ -72,37 +72,37 @@ Here is an organization record for Cambridge Scientific Abstracts. The informati
 
 #### Organization
 
-The figure above shows the organization tab for Cambridge Scientific Abstracts. Notice that this screenshot does not display the ‘Account Details’, ‘Notes’ or ‘Company URL’ fields that were found on the New Organization window on the previous page. These three fields are not displayed because no data was entered into those fields when the record was added. 
+The figure above shows the organization tab for Cambridge Scientific Abstracts. Notice that this screenshot does not display the ‘Account Details’, ‘Notes’ or ‘Company URL’ fields that were found on the New Organization window on the previous page. These three fields are not displayed because no data was entered into those fields when the record was added.
 
-The ‘edit organization details’ link will open up a window that allows you to edit the information originally entered in the New Organization’s window. 
+The ‘edit organization details’ link will open up a window that allows you to edit the information originally entered in the New Organization’s window.
 
 In this example Cambridge Scientific Abstracts has been assigned ProQuest as the parent organization. The ‘view’ link next to ProQuest LLC will open the ProQuest organization record.
 
 #### Aliases
 
-![image alt text](image_2.png)
+![image alt text](img/image_2.png)
 
-The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page 
+The Aliases tab allows the user to add multiple aliases for the organization.  The default alias types are Alternative Name, Name Change, and Acronym.  These fields can be customized using the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page
 
 #### Contacts
 
-![image alt text](image_3.png) 
+![image alt text](img/image_3.png)
 
-The Contacts tab allows the user to add contact information for both specific personnel and general support.  None of the fields are required except for Role(s). 
+The Contacts tab allows the user to add contact information for both specific personnel and general support.  None of the fields are required except for Role(s).
 
-The values for the ‘Role(s)’ field can be customized through the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page. When the contact is no longer accurate, it can either be deleted or archived for historical tracking purposes. Contacts that have the ‘Archived’ box checked are kept in the system but are collapsed beneath a ‘show archived contacts’ link so that all users know that the contact information is out of date. 
+The values for the ‘Role(s)’ field can be customized through the [Admin](#bookmark=id.26in1rg)[ ](#bookmark=id.26in1rg)page. When the contact is no longer accurate, it can either be deleted or archived for historical tracking purposes. Contacts that have the ‘Archived’ box checked are kept in the system but are collapsed beneath a ‘show archived contacts’ link so that all users know that the contact information is out of date.
 
 The ability to delete a contact has been restricted to users with admin privileges.
 
 #### Accounts
 
-The Accounts tab is used for storing login information that library personnel use for site administration, gathering usage statistics, etc. 
+The Accounts tab is used for storing login information that library personnel use for site administration, gathering usage statistics, etc.
 
-Account login information can be entered in either CORAL Organizations or if installed, CORAL Resources. Account login information which is resource specific may be entered in CORAL Resources. Account login information that is not resource specific (ex. A single administrator login for all Gale databases) should be entered here in CORAL Organizations. Information stored at the organization level will be inherited by individual resources within CORAL Resources. 
+Account login information can be entered in either CORAL Organizations or if installed, CORAL Resources. Account login information which is resource specific may be entered in CORAL Resources. Account login information that is not resource specific (ex. A single administrator login for all Gale databases) should be entered here in CORAL Organizations. Information stored at the organization level will be inherited by individual resources within CORAL Resources.
 
 Add new login information by selecting the ‘add new external login’ link.
 
-![image alt text](image_4.png)
+![image alt text](img/image_4.png)
 
 Most of the fields are self-explanatory, with the exception of
 
@@ -112,7 +112,7 @@ Most of the fields are self-explanatory, with the exception of
 
 #### Issues
 
-![image alt text](image_5.png)
+![image alt text](img/image_5.png)
 
 The Issues tab is meant for recording general information about an organization that may be valuable over time. One example would be recording when an organization has frequent breaks in access or significant server downtimes. Another example would be having an organization that is often slow when it comes to sending out renewal invoices. The ‘add new issue’ link opens a new window which includes a date and notes field. It is a simple field but it may come in handy for recording the institutional knowledge that exists among various personnel.
 
@@ -133,4 +133,3 @@ Privileges
 * View only : provides only the ability to view existing organization records.
 
 ![image alt text](image_6.png)
-
