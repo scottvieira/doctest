@@ -61,7 +61,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'coral_documentation_project'
-copyright = u'2016. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>'
+copyright = u'2016. <a href="https://www.gnu.org/licenses/fdl-1.3.en.html">GNU Free Documentation 1.3</a>'
 author = u'CORAL Web Committee'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -339,7 +339,7 @@ texinfo_documents = [
 epub_title = u'coral_documentation'
 epub_author = u'CORAL Web Committee'
 epub_publisher = u'CORAL Web Committee'
-epub_copyright = u'2016, CC BY-NC-SA 3.0'
+epub_copyright = u'2016, GNU Free Documentationn 1.3'
 
 
 # Documents to append as an appendix to all manuals.
