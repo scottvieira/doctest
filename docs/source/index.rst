@@ -9,12 +9,18 @@ CORAL Documentation Tutorial
 Contents:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
+   overview
+   resources
    licensing
    organizations
    usagestats
-
+   technical
+   authentication
+   terms
+   glossary
+   faq
 
 Indices and tables
 ==================

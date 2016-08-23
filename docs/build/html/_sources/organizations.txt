@@ -133,3 +133,5 @@ Privileges
 * View only : provides only the ability to view existing organization records.
 
 ![image alt text](img/image_6.png)
+
+![Add New User Form](http://img/image_6.png)
