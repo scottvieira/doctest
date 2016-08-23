@@ -60,9 +60,9 @@ source_suffix = ['.rst', '.md']
 master_doc = 'index'
 
 # General information about the project.
-project = 'coral_documentation'
-copyright = '2016, Scott Vieira'
-author = 'Scott Vieira'
+project = 'coral_documentation_project'
+copyright = u'2016. <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">CC BY-NC-SA 3.0</a>'
+author = u'CORAL Web Committee'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -145,7 +145,7 @@ html_theme = 'alabaster'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-# html_title = 'coral_documentation v0.0.1'
+# html_title = 'CORAL Documentation Project'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
@@ -271,8 +271,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'coral_documentation.tex', 'coral\\_documentation Documentation',
-     'Scott Vieira', 'manual'),
+    (master_doc, 'coral_documentation.tex', 'coral\\_documentation Documentation', u'CORAL Web Committee', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -332,6 +331,16 @@ texinfo_documents = [
      author, 'coral_documentation', 'One line description of project.',
      'Miscellaneous'),
 ]
+
+# -- Options for Epub output ---------------------------------------------------
+
+# Bibliographic Dublin Core info
+
+epub_title = u'coral_documentation'
+epub_author = u'CORAL Web Committee'
+epub_publisher = u'CORAL Web Committee'
+epub_copyright = u'2016, CC BY-NC-SA 3.0'
+
 
 # Documents to append as an appendix to all manuals.
 #
