@@ -43,18 +43,17 @@
             
   <div class="section" id="technical-documentation">
 <span id="technical-documentation"></span><h1>Technical Documentation<a class="headerlink" href="#technical-documentation" title="Permalink to this headline">¶</a></h1>
-</div>
 <div class="section" id="supported-browsers">
-<span id="supported-browsers"></span><h1>Supported Browsers<a class="headerlink" href="#supported-browsers" title="Permalink to this headline">¶</a></h1>
+<span id="supported-browsers"></span><h2>Supported Browsers<a class="headerlink" href="#supported-browsers" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Current and recent Firefox, IE, Safari, Seamonkey, Opera, and Chrome versions are all supported</li>
 <li>Requires Browser to have Javascript enabled – the CORAL interface relies heavily on AJAX, JQuery and JQuery plugins</li>
 </ul>
 </div>
 <div class="section" id="server-side-requirements-and-setup">
-<span id="server-side-requirements-and-setup"></span><h1>Server-Side Requirements and Setup<a class="headerlink" href="#server-side-requirements-and-setup" title="Permalink to this headline">¶</a></h1>
+<span id="server-side-requirements-and-setup"></span><h2>Server-Side Requirements and Setup<a class="headerlink" href="#server-side-requirements-and-setup" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="database">
-<span id="database"></span><h2>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<span id="database"></span><h3>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h3>
 <p>CORAL runs with a MySQL 5 backend.  Each CORAL module uses its own MySQL schema.  The recommended format for schema name is <code class="docutils literal"><span class="pre">coral_MODULENAME_prod</span></code>, e.g. <code class="docutils literal"><span class="pre">coral_resources_prod</span></code>.  Since the database name is set in the <code class="docutils literal"><span class="pre">configuration.ini</span></code> file this name can be easily changed. For security purposes it is recommended to have a “coral” user which has select, insert, update and
 delete privileges only (no create table privileges).  This “coral” user should have access to all CORAL databases for interoperability.</p>
 <p>The CORAL modules are heavily data-driven.  As a result we have provided an initial “snapshot” of our
@@ -63,13 +62,13 @@ through the front-end if desired – refer to the user guide for more informatio
 For data models and the MySQL Workbench file, refer to http://coral-erm.org/documentation</p>
 </div>
 <div class="section" id="server-side-scripting">
-<span id="server-side-scripting"></span><h2>Server-side scripting<a class="headerlink" href="#server-side-scripting" title="Permalink to this headline">¶</a></h2>
+<span id="server-side-scripting"></span><h3>Server-side scripting<a class="headerlink" href="#server-side-scripting" title="Permalink to this headline">¶</a></h3>
 <p>A <a class="reference external" href="http://php.net/supported-versions.php">supported version of PHP 5</a> is a requirement for CORAL since it uses Object Oriented code.  If you are unsure whether you’re
 running PHP 5, be sure to install using the web installation script since it will validate your version.  See
 Installation section, below.</p>
 </div>
 <div class="section" id="authentication">
-<span id="authentication"></span><h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h2>
+<span id="authentication"></span><h3>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h3>
 <p>Authentication is required for CORAL since all users are given specific privilege levels (for more on
 privilege levels refer to the user guide). CORAL has two choices for authentication – either to tie in to
 your university/library’s authentication system or to install the CORAL Authentication Module. For more
@@ -93,7 +92,7 @@ their name in the upper right hand corner. This connection is optional.</p>
 </div>
 </div>
 <div class="section" id="application-architecture">
-<span id="application-architecture"></span><h1>Application Architecture<a class="headerlink" href="#application-architecture" title="Permalink to this headline">¶</a></h1>
+<span id="application-architecture"></span><h2>Application Architecture<a class="headerlink" href="#application-architecture" title="Permalink to this headline">¶</a></h2>
 <p>CORAL is written using object oriented code.  All classes and configuration are defined under the
 <code class="docutils literal"><span class="pre">/admin/</span></code> directory.  The admin directory has an <code class="docutils literal"><span class="pre">.htaccess</span></code> file in order to prevent web users from
 accessing config data.</p>
@@ -103,7 +102,7 @@ and also contains some globally used functions.</p>
 <p>Common classes are in <code class="docutils literal"><span class="pre">/admin/classes/common/</span></code> - includes configuration, database connection, LDAP,
 Utility, Email</p>
 <div class="section" id="database">
-<span id="id1"></span><h2>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h3>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h3>
 <p>All database tables have matching classes and all database SQL code is done within methods of these
 classes.</p>
 <p>Every class extends the DatabaseObject for generic  SQL handling (retrieving all values, inserts, updates,
@@ -111,7 +110,7 @@ deletes).  DatabaseObject is in <code class="docutils literal"><span class="pre"
 <code class="docutils literal"><span class="pre">/admin/classes/domain/</span></code></p>
 </div>
 <div class="section" id="web-side">
-<span id="web-side"></span><h2>Web side<a class="headerlink" href="#web-side" title="Permalink to this headline">¶</a></h2>
+<span id="web-side"></span><h3>Web side<a class="headerlink" href="#web-side" title="Permalink to this headline">¶</a></h3>
 <p>Pages - <code class="docutils literal"><span class="pre">admin.php</span></code>, <code class="docutils literal"><span class="pre">index.php</span></code>, detail view scripts and reports are all shells for positioning divs.  Within
 each div data is updated via ajax calling <code class="docutils literal"><span class="pre">ajax_htmldata.php</span></code>.  This way when changes are made to the
 data the display can be immediately updated without needing to refresh the entire page.</p>
@@ -124,7 +123,7 @@ database classes - this is where data is sent after being entered in the forms</
 <p><code class="docutils literal"><span class="pre">/css/styles.css</span></code> is the general css file used by all pages in coral.</p>
 </div>
 <div class="section" id="javascript">
-<span id="javascript"></span><h2>Javascript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h2>
+<span id="javascript"></span><h3>Javascript<a class="headerlink" href="#javascript" title="Permalink to this headline">¶</a></h3>
 <p>All javascript code is stored under <code class="docutils literal"><span class="pre">/js/</span></code> directory.  This directory contains javascript for base pages
 (<code class="docutils literal"><span class="pre">index.php</span></code>, <code class="docutils literal"><span class="pre">admin.php</span></code>) where the names of files correspond with the javascript file name. (e.g.
 <code class="docutils literal"><span class="pre">admin.php</span></code> uses <code class="docutils literal"><span class="pre">admin.js</span></code>)</p>
@@ -134,11 +133,11 @@ thickbox and other plugins) .</p>
 generated from <code class="docutils literal"><span class="pre">ajax_forms.php</span></code></p>
 </div>
 <div class="section" id="naming-standards">
-<span id="naming-standards"></span><h2>Naming standards<a class="headerlink" href="#naming-standards" title="Permalink to this headline">¶</a></h2>
+<span id="naming-standards"></span><h3>Naming standards<a class="headerlink" href="#naming-standards" title="Permalink to this headline">¶</a></h3>
 <p>If you would like to contribute code / database changes to the project it is recommended that you stay
 within the following naming conventions.</p>
 <div class="section" id="database-naming">
-<span id="database-naming"></span><h3>Database Naming:<a class="headerlink" href="#database-naming" title="Permalink to this headline">¶</a></h3>
+<span id="database-naming"></span><h4>Database Naming:<a class="headerlink" href="#database-naming" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Attribute and entity names in singular form and using present tense</li>
 <li>Entity names are uppercased with no spaces or underscores between words (camel case)</li>
@@ -165,7 +164,7 @@ suffix<ul>
 </ul>
 </div>
 <div class="section" id="code">
-<span id="code"></span><h3>Code:<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
+<span id="code"></span><h4>Code:<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Refer to previous sections for directory structure, script locations and script naming.</li>
 <li>Variable, class and attribute names mimic the database standards with camel case.</li>
@@ -180,7 +179,7 @@ suffix<ul>
 </div>
 </div>
 <div class="section" id="installation">
-<span id="installation"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<span id="installation"></span><h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>Installation can occur in one of two ways – either through the web installation script or manually.  Web
 installation will provide advantages over manual installation because it will check MySQL privileges and PHP version.</p>
 <p>When you first <a class="reference external" href="http://coral-erm.org/download">download the scripts</a>, it is recommended to place each one into a parent <code class="docutils literal"><span class="pre">/coral/</span></code> directory if your server is sharing space with other applications.  This is optional but it helps group all of the coral applications together.</p>
@@ -197,7 +196,7 @@ installation will provide advantages over manual installation because it will ch
 <p>Depending on whether the module allows you to upload attachments or documents you may also need
 to <code class="docutils literal"><span class="pre">chmod</span> <span class="pre">777</span></code> some directories:For Licensing – both <code class="docutils literal"><span class="pre">/licensing/attachments/</span></code> and <code class="docutils literal"><span class="pre">/licensing/documents/</span></code> directoriesFor Usage Statistics – both <code class="docutils literal"><span class="pre">/usage/archive/</span></code> and <code class="docutils literal"><span class="pre">/usage/log/</span></code> directoriesFor Resources – <code class="docutils literal"><span class="pre">/resources/attachments/</span></code></p>
 <div class="section" id="web-installation">
-<span id="web-installation"></span><h2>Web installation<a class="headerlink" href="#web-installation" title="Permalink to this headline">¶</a></h2>
+<span id="web-installation"></span><h3>Web installation<a class="headerlink" href="#web-installation" title="Permalink to this headline">¶</a></h3>
 <p>Under each module directory, visit <code class="docutils literal"><span class="pre">http://.../coral/modulename/install/</span></code> and follow instructions on the
 screen.</p>
 <p><strong>Installation Notes:</strong></p>
@@ -210,7 +209,7 @@ database and reset to original data load!</strong></li>
 </ul>
 </div>
 <div class="section" id="manual-installation">
-<span id="manual-installation"></span><h2>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h2>
+<span id="manual-installation"></span><h3>Manual Installation<a class="headerlink" href="#manual-installation" title="Permalink to this headline">¶</a></h3>
 <p>Install database tables</p>
 <ol class="simple">
 <li>Create new database schema (recommended name is <code class="docutils literal"><span class="pre">coral_modulename_prod</span></code>)</li>
@@ -300,7 +299,7 @@ side until both modules are installed.</li>
 </div>
 </div>
 <div class="section" id="resources-alerts-scheduling">
-<span id="resources-alerts-scheduling"></span><h1>Resources Alerts Scheduling<a class="headerlink" href="#resources-alerts-scheduling" title="Permalink to this headline">¶</a></h1>
+<span id="resources-alerts-scheduling"></span><h2>Resources Alerts Scheduling<a class="headerlink" href="#resources-alerts-scheduling" title="Permalink to this headline">¶</a></h2>
 <p>The Resources module includes a script called <code class="docutils literal"><span class="pre">sendAlerts.php</span></code> that can be run nightly to send out
 subscription alerts. To set it up via cron job, you will need to invoke php. You need to access the alerts page via curl or wget in order to generate emails with functional links:</p>
 <p><code class="docutils literal"><span class="pre">0</span> <span class="pre">0</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">*</span> <span class="pre">/usr/bin/wget</span> <span class="pre">http://YOUR_PATH…/coral/resources/sendAlerts.php</span></code></p>
@@ -310,16 +309,16 @@ temporary testing purposes you may wish to change or remove this email address. 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page.</p>
 </div>
 <div class="section" id="additional-coral-resources-customization-options">
-<span id="additional-coral-resources-customization-options"></span><h1>Additional CORAL Resources customization options<a class="headerlink" href="#additional-coral-resources-customization-options" title="Permalink to this headline">¶</a></h1>
+<span id="additional-coral-resources-customization-options"></span><h2>Additional CORAL Resources customization options<a class="headerlink" href="#additional-coral-resources-customization-options" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="payment-formatting">
-<span id="payment-formatting"></span><h2>Payment formatting<a class="headerlink" href="#payment-formatting" title="Permalink to this headline">¶</a></h2>
+<span id="payment-formatting"></span><h3>Payment formatting<a class="headerlink" href="#payment-formatting" title="Permalink to this headline">¶</a></h3>
 <p>To change the format of the display of amounts (e.g. use a comma in the place of a period), you can
 modify the <code class="docutils literal"><span class="pre">/resources/directory.php</span></code> file, <code class="docutils literal"><span class="pre">integer_to_cost()</span></code> function.  The <code class="docutils literal"><span class="pre">number_format</span></code> function is a
 php function – refer to PHP documentation for more information:</p>
 <p>http://php.net/manual/en/function.number-format.php</p>
 </div>
 <div class="section" id="date-formatting">
-<span id="date-formatting"></span><h2>Date formatting<a class="headerlink" href="#date-formatting" title="Permalink to this headline">¶</a></h2>
+<span id="date-formatting"></span><h3>Date formatting<a class="headerlink" href="#date-formatting" title="Permalink to this headline">¶</a></h3>
 <p>To change the format of the date from the US standard MM/DD/YYYY you can modify the
 <code class="docutils literal"><span class="pre">/resources/directory.php</span></code> file, <code class="docutils literal"><span class="pre">format_date()</span></code> function.  The <code class="docutils literal"><span class="pre">date()</span></code> function is a php function – refer to
 PHP documentation for more information:</p>
@@ -335,14 +334,14 @@ functionality.  Be sure this format matches the format you set in <code class="d
 <p><code class="docutils literal"><span class="pre">Date.format</span> <span class="pre">=</span> <span class="pre">'dd-mm-yyyy';</span></code></p>
 </div>
 <div class="section" id="email-customization">
-<span id="email-customization"></span><h2>Email customization<a class="headerlink" href="#email-customization" title="Permalink to this headline">¶</a></h2>
+<span id="email-customization"></span><h3>Email customization<a class="headerlink" href="#email-customization" title="Permalink to this headline">¶</a></h3>
 <p>The templates for the workflow notification and alert emails are located in <code class="docutils literal"><span class="pre">/admin/emails/</span></code></p>
 <p>You can modify the text in these as needed, leaving the words inside brackets <code class="docutils literal"><span class="pre">&lt;</span> <span class="pre">&gt;</span></code> as is – you can change
 where they appear but leave the format alone.</p>
 </div>
 </div>
 <div class="section" id="upgrades">
-<span id="upgrades"></span><h1>Upgrades<a class="headerlink" href="#upgrades" title="Permalink to this headline">¶</a></h1>
+<span id="upgrades"></span><h2>Upgrades<a class="headerlink" href="#upgrades" title="Permalink to this headline">¶</a></h2>
 <p>Upgrades to CORAL will be announced through the CORAL ERM Listserv.  If you wish to be added, please
 consult http://coral-erm.org or email coral-admin&#64;listserv.nd.edu directly.</p>
 <p>In general, small upgrades with simple coding changes will not be given their own version numbers.  If
@@ -360,7 +359,7 @@ the upgrade.</p>
 <p><strong>After performing upgrade, be sure to remove your <code class="docutils literal"><span class="pre">/install/</span></code> directory.</strong></p>
 </div>
 <div class="section" id="new-to-php">
-<span id="new-to-php"></span><h1>New to PHP?<a class="headerlink" href="#new-to-php" title="Permalink to this headline">¶</a></h1>
+<span id="new-to-php"></span><h2>New to PHP?<a class="headerlink" href="#new-to-php" title="Permalink to this headline">¶</a></h2>
 <p>If your institution is new to the PHP/MySQL setup, installation may be a bit more tricky.</p>
 <p>First off, make sure that you’re both installing php with the <code class="docutils literal"><span class="pre">-with-mysql</span></code> option and installing the phpmysql package.  To verify that php and mysql are installed and working correctly, you can make a test
 php script with only the following:</p>
@@ -372,7 +371,7 @@ php script with only the following:</p>
 install or with the CORAL pages themselves.</p>
 </div>
 <div class="section" id="possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point">
-<span id="possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point"></span><h1>Possible issues during installation (or - things to verify if CORAL is not working at this point)<a class="headerlink" href="#possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point" title="Permalink to this headline">¶</a></h1>
+<span id="possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point"></span><h2>Possible issues during installation (or - things to verify if CORAL is not working at this point)<a class="headerlink" href="#possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point" title="Permalink to this headline">¶</a></h2>
 <p>Verify you’re running PHP 5</p>
 <p>Verify your database user can connect to the MySQL database and that all tables were created properly</p>
 <p>If your login isn’t working, verify that you have required your authentication service in the <code class="docutils literal"><span class="pre">.htaccess</span></code> file.You should be prompted with your institutions default login screen before getting to the CORAL screens.</p>
@@ -383,6 +382,7 @@ variable in the lefthand column.</p>
 have the database setting and that your database user can connect to that database.  Also, be sure to complete installation of both modules involved.</p>
 <p>If your remote user auth variable isn’t working, verify that you have <code class="docutils literal"><span class="pre">register_globals</span> <span class="pre">=</span> <span class="pre">On</span></code></p>
 </div>
+</div>
 
 
           </div>
@@ -392,7 +392,7 @@ have the database setting and that your database user can connect to that databa
         <div class="sphinxsidebarwrapper">
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Technical Documentation</a></li>
+<li><a class="reference internal" href="#">Technical Documentation</a><ul>
 <li><a class="reference internal" href="#supported-browsers">Supported Browsers</a></li>
 <li><a class="reference internal" href="#server-side-requirements-and-setup">Server-Side Requirements and Setup</a><ul>
 <li><a class="reference internal" href="#database">Database</a></li>
@@ -426,6 +426,8 @@ have the database setting and that your database user can connect to that databa
 <li><a class="reference internal" href="#upgrades">Upgrades</a></li>
 <li><a class="reference internal" href="#new-to-php">New to PHP?</a></li>
 <li><a class="reference internal" href="#possible-issues-during-installation-or-things-to-verify-if-coral-is-not-working-at-this-point">Possible issues during installation (or - things to verify if CORAL is not working at this point)</a></li>
+</ul>
+</li>
 </ul>
 <div class="relations">
 <h3>Related Topics</h3>

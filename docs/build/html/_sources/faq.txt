@@ -1,5 +1,11 @@
 FAQ
 ---
 
-### FAQ
+### General
+
+### Installation
+
+### Technical
+
+
 

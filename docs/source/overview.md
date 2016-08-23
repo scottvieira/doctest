@@ -1,7 +1,15 @@
 Overview: the Basics of CORAL
 -----------------------------
 
-### CORAL: the Basics User Guide
+### Introduction
 
-Overview of the CORAL system and user interface.
+### History
+
+### System Requirements
+
+### The User Interface
+
+
+
+
 

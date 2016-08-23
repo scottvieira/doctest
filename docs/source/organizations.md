@@ -35,7 +35,7 @@ There are four facets for search:
 
 These facets can be used in conjunction.  
 
-## New Organization
+### New Organization
 
 Organization Name?
 

@@ -22,13 +22,13 @@ Installation is recommended in the /coral/auth/ directory. It is also recommende
 the CORAL Main Landing page and place it into the /coral/ directory. This contains an HTML file and
 graphics for each module, similar to the landing page on the CORAL demo website.
 
-**Web Installation**
+#### Web Installation
 
 Visit `http://.../coral/auth/install/` and follow instructions on the screen
 
 _Be sure to remove the `/install/` directory once installation is complete_
 
-**Manual Installation**
+#### Manual Installation
 
 Install database tables
 

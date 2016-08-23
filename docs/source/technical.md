@@ -1,14 +1,13 @@
 Technical Documentation
 -----------------------
 
-
-## Supported Browsers 
+### Supported Browsers 
 * Current and recent Firefox, IE, Safari, Seamonkey, Opera, and Chrome versions are all supported 
 * Requires Browser to have Javascript enabled – the CORAL interface relies heavily on AJAX, JQuery and JQuery plugins 
 
-## Server-Side Requirements and Setup 
+### Server-Side Requirements and Setup 
 
-### Database
+#### Database
  
 CORAL runs with a MySQL 5 backend.  Each CORAL module uses its own MySQL schema.  The recommended format for schema name is `coral_MODULENAME_prod`, e.g. `coral_resources_prod`.  Since the database name is set in the `configuration.ini` file this name can be easily changed. For security purposes it is recommended to have a “coral” user which has select, insert, update and 
 delete privileges only (no create table privileges).  This “coral” user should have access to all CORAL databases for interoperability. 
@@ -18,13 +17,13 @@ data which will be inserted when the MySQL tables are created.  Most of this dat
 through the front-end if desired – refer to the user guide for more information. 
 For data models and the MySQL Workbench file, refer to http://coral-erm.org/documentation  
 
-### Server-side scripting 
+#### Server-side scripting 
 
 A [supported version of PHP 5](http://php.net/supported-versions.php) is a requirement for CORAL since it uses Object Oriented code.  If you are unsure whether you’re
 running PHP 5, be sure to install using the web installation script since it will validate your version.  See 
 Installation section, below. 
 
-### Authentication 
+#### Authentication 
 Authentication is required for CORAL since all users are given specific privilege levels (for more on
 privilege levels refer to the user guide). CORAL has two choices for authentication – either to tie in to
 your university/library’s authentication system or to install the CORAL Authentication Module. For more
@@ -50,7 +49,7 @@ allowed by the `.htaccess` may visit the site; if LDAP has been set up in the `c
 their name in the upper right hand corner. This connection is optional.
 
 
-## Application Architecture 
+### Application Architecture 
 CORAL is written using object oriented code.  All classes and configuration are defined under the 
 `/admin/` directory.  The admin directory has an `.htaccess` file in order to prevent web users from 
 accessing config data. 
@@ -63,7 +62,7 @@ and also contains some globally used functions.
 Common classes are in `/admin/classes/common/` - includes configuration, database connection, LDAP, 
 Utility, Email 
 
-### Database 
+#### Database 
 All database tables have matching classes and all database SQL code is done within methods of these 
 classes. 
 
@@ -71,7 +70,7 @@ Every class extends the DatabaseObject for generic  SQL handling (retrieving all
 deletes).  DatabaseObject is in `/admin/classes/common/` and the database classes are located in 
 `/admin/classes/domain/` 
 
-### Web side 
+#### Web side 
 Pages - `admin.php`, `index.php`, detail view scripts and reports are all shells for positioning divs.  Within 
 each div data is updated via ajax calling `ajax_htmldata.php`.  This way when changes are made to the 
 data the display can be immediately updated without needing to refresh the entire page. 
@@ -89,7 +88,7 @@ database classes - this is where data is sent after being entered in the forms
 
 `/css/styles.css` is the general css file used by all pages in coral. 
 
-### Javascript 
+#### Javascript 
 All javascript code is stored under `/js/` directory.  This directory contains javascript for base pages
 (`index.php`, `admin.php`) where the names of files correspond with the javascript file name. (e.g. 
 `admin.php` uses `admin.js`) 
@@ -100,11 +99,11 @@ thickbox and other plugins) .
 The `/js/forms/` directory contains all javascript files corresponding to the thickbox forms that are 
 generated from `ajax_forms.php` 
 
-### Naming standards 
+#### Naming standards 
 If you would like to contribute code / database changes to the project it is recommended that you stay
 within the following naming conventions. 
 
-#### Database Naming:
+##### Database Naming:
  
 * Attribute and entity names in singular form and using present tense 
 * Entity names are uppercased with no spaces or underscores between words (camel case) 
@@ -123,7 +122,7 @@ suffix
     * Date - Date 
     * DateTime - Date and time stamp 
 
-#### Code: 
+##### Code: 
 * Refer to previous sections for directory structure, script locations and script naming. 
 * Variable, class and attribute names mimic the database standards with camel case. 
 * Method names are prefixed with:  
@@ -131,7 +130,7 @@ suffix
     * Get – retrieves a value 
     * Set – sets a value
 
-## Installation 
+### Installation 
 Installation can occur in one of two ways – either through the web installation script or manually.  Web 
 installation will provide advantages over manual installation because it will check MySQL privileges and PHP version.
 
@@ -155,7 +154,7 @@ For Licensing – both `/licensing/attachments/` and `/licensing/documents/` dir
 For Usage Statistics – both `/usage/archive/` and `/usage/log/` directories  
 For Resources – `/resources/attachments/`  
 
-### Web installation 
+#### Web installation 
 Under each module directory, visit `http://.../coral/modulename/install/` and follow instructions on the 
 screen.
 
@@ -166,7 +165,7 @@ screen.
 database and reset to original data load!** 
 * Be sure to remove the `/install/` directory once installation is complete
 
-### Manual Installation 
+#### Manual Installation 
 Install database tables 
 
 1. Create new database schema (recommended name is `coral_modulename_prod`) 
@@ -266,7 +265,7 @@ Name of the field that LDAP uses for last name – for us it’s “sn”
 side until both modules are installed.
 1. Join the listserv used for product updates, support, and general discussion by sending an email to listserv@listserv.nd.edu. Leave the subject line blank and include 'SUBSCRIBE CORAL-ERM Your Name' in the body; ex. SUBSCRIBE CORAL-ERM John Smith.
 
-## Resources Alerts Scheduling 
+### Resources Alerts Scheduling 
 The Resources module includes a script called `sendAlerts.php` that can be run nightly to send out 
 subscription alerts. To set it up via cron job, you will need to invoke php. You need to access the alerts page via curl or wget in order to generate emails with functional links:
 
@@ -278,16 +277,16 @@ Note that this will send an email to the feedbackEmailAddress also set in `confi
 temporary testing purposes you may wish to change or remove this email address.  The number of days 
 in advance and other email addresses can be modified in the Alert Settings tab of the Admin page. 
 
-## Additional CORAL Resources customization options 
+### Additional CORAL Resources customization options 
 
-### Payment formatting 
+#### Payment formatting 
 To change the format of the display of amounts (e.g. use a comma in the place of a period), you can 
 modify the `/resources/directory.php` file, `integer_to_cost()` function.  The `number_format` function is a
 php function – refer to PHP documentation for more information: 
 
 http://php.net/manual/en/function.number-format.php
 
-### Date formatting 
+#### Date formatting 
 To change the format of the date from the US standard MM/DD/YYYY you can modify the 
 `/resources/directory.php` file, `format_date()` function.  The `date()` function is a php function – refer to 
 PHP documentation for more information: 
@@ -308,13 +307,13 @@ or
 
 `Date.format = 'dd-mm-yyyy';`
 
-### Email customization 
+#### Email customization 
 The templates for the workflow notification and alert emails are located in `/admin/emails/`
 
 You can modify the text in these as needed, leaving the words inside brackets `< >` as is – you can change
 where they appear but leave the format alone. 
 
-## Upgrades 
+### Upgrades 
 Upgrades to CORAL will be announced through the CORAL ERM Listserv.  If you wish to be added, please 
 consult http://coral-erm.org or email coral-admin@listserv.nd.edu directly. 
 
@@ -339,7 +338,7 @@ the upgrade.
 
 **After performing upgrade, be sure to remove your `/install/` directory.**
 
-## New to PHP? 
+### New to PHP? 
 If your institution is new to the PHP/MySQL setup, installation may be a bit more tricky. 
 
 First off, make sure that you’re both installing php with the `-with-mysql` option and installing the phpmysql package.  To verify that php and mysql are installed and working correctly, you can make a test 
@@ -355,7 +354,7 @@ To debug issues with authentication you can override authentication in the
 You may also wish to change the error reporting level in `php.ini` if you are getting blank pages in the
 install or with the CORAL pages themselves. 
 
-## Possible issues during installation (or - things to verify if CORAL is not working at this point) 
+### Possible issues during installation (or - things to verify if CORAL is not working at this point) 
 Verify you’re running PHP 5 
 
 Verify your database user can connect to the MySQL database and that all tables were created properly 
