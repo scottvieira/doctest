@@ -1,29 +1,30 @@
-> **CORAL Resources Module User Guide**
->
-> **About CORAL Resources**
->
-> A component of Hesburgh Libraries locally developed ERM, CORAL
-> Resources aids in the management of the electronic resource workflow
-> from the initial request through the acquisition process and into
-> ongoing support and maintenance. CORAL Resources supports the
-> completion of these workflow processes with a convenient task-based
-> queue in which automated email alerts indicate to staff when new tasks
-> are available.
->
-> **Component Overview**
->
-> CORAL Resources has four major components in the primary navigation at
-> the top of each page.
->
-> • Home
->
-> • New Resource
->
-> • My Queue
->
-> • Admin
+CORAL Resources Module User Guide
+---------------------------------
 
-**Home**
+### About CORAL Resources
+
+ A component of Hesburgh Libraries locally developed ERM, CORAL
+ Resources aids in the management of the electronic resource workflow
+ from the initial request through the acquisition process and into
+ ongoing support and maintenance. CORAL Resources supports the
+ completion of these workflow processes with a convenient task-based
+ queue in which automated email alerts indicate to staff when new tasks
+ are available.
+
+### Component Overview
+
+ CORAL Resources has four major components in the primary navigation at
+ the top of each page.
+
+ • Home
+
+ • New Resource
+
+ • My Queue
+
+ • Admin
+
+### Home
 ========
 
 ![](media/image1.png){width="6.5in" height="4.0in"}
@@ -36,8 +37,8 @@ results can be exported to a spreadsheet using the excel icon in the
 upper right corner. The exported file includes more fields than what are
 displayed on the search results page.
 
-**New Resource** ![](media/image2.png){width="6.5in" height="3.986111111111111in"}
-==================================================================================
+New Resource ![](media/image2.png){width="6.5in" height="3.986111111111111in"}
+
 
 All new resource records are added through this form. The form includes
 only select fields which are the most critical for processing new
@@ -64,11 +65,9 @@ Please note that the system does allow duplicate records for the same
 resource to be entered. The form will however alert the user that
 another record with the same resource name already exists.
 
-**The Resource** **Record**
-===========================
+### The Resource Record
 
-**Product**
------------
+### Product
 
 \[insert product image here)
 
@@ -77,21 +76,20 @@ resource is logically grouped. The first tab, *Product*, contains the
 descriptive information such as name, alias, issn, publisher, etc which
 identifies and defines the resource.
 
-**Edit product details**
-------------------------
+### Edit product details
 
 **\[insert image here\]**
 
-> The information on the *Product* tab can be edited by following the
-> edit product details link or by using the edit icon on the tab. The
-> Name, Description, URL, Format and Resource Type fields come from the
-> Add New Resource form. The Parent field identifies a related parent
-> resource and includes an auto- complete feature populated by existing
-> resource records that already exist in the system. An example of a
-> possible Parent relationship would be that between ISI Web of Science
-> (as the parent) and ISI Proceedings Index. Another example could
-> include a package record identified as the parent of a record for an
-> individual journal.
+ The information on the *Product* tab can be edited by following the
+ edit product details link or by using the edit icon on the tab. The
+ Name, Description, URL, Format and Resource Type fields come from the
+ Add New Resource form. The Parent field identifies a related parent
+ resource and includes an auto- complete feature populated by existing
+ resource records that already exist in the system. An example of a
+ possible Parent relationship would be that between ISI Web of Science
+ (as the parent) and ISI Proceedings Index. Another example could
+ include a package record identified as the parent of a record for an
+ individual journal.
 
 The *Product* tab allows for the addition of multiple associated
 organizations and aliases. The values for the Organization Role and
@@ -110,8 +108,7 @@ status as ‘Archived’. This was intended to be used to identify resources
 that were no longer available but for which there was value in retaining
 a record in CORAL.
 
-**Add new note**
-----------------
+### Add new note
 
 \[insert new note image here}
 
@@ -121,30 +118,28 @@ tab on which it is added. The Note Type field has been included to
 provide context to the note. The values for the Note Type field can be
 customized through the *Admin* page.
 
-**Acquisitions**
-----------------
+### Acquisitions
 
 \[insert image here\]
 
-> The Acquisitions tab contains details of the libraries’ acquisition of
-> the resource such as order number, cost, fund, license status, etc.
+ The Acquisitions tab contains details of the libraries’ acquisition of
+ the resource such as order number, cost, fund, license status, etc.
 
-**Edit acquisitions information**
----------------------------------
+### Edit acquisitions information
 
 **\[insert image here\]**
 
-> The acquisitions information can be edited by using the edit
-> acquisitions information link or the matching edit icon. The
-> information here is meant to provide context to the local acquisitions
-> processes. The acquisition type field is the same as was entered on
-> the add new resource form. The initial cost data also comes from the
-> add new resource form. The cost type field is intended to distinguish
-> between one time and ongoing payments. The values for the cost type
-> field can be customized through the *Admin* page. This cost record is
-> intended to be used for recording projected initial cost for the
-> resource. CORAL Resources does not support the tracking of cost
-> payments over time. That will be investigated as a future enhancement.
+ The acquisitions information can be edited by using the edit
+ acquisitions information link or the matching edit icon. The
+ information here is meant to provide context to the local acquisitions
+ processes. The acquisition type field is the same as was entered on
+ the add new resource form. The initial cost data also comes from the
+ add new resource form. The cost type field is intended to distinguish
+ between one time and ongoing payments. The values for the cost type
+ field can be customized through the *Admin* page. This cost record is
+ intended to be used for recording projected initial cost for the
+ resource. CORAL Resources does not support the tracking of cost
+ payments over time. That will be investigated as a future enhancement.
 
 Purchasing Site is intended to indicate the library or organization
 purchasing the resource. The values can be customized through the
@@ -168,27 +163,25 @@ subscription end date. In order to implement the alerts feature the file
 sendAlerts.php will need to be run as a nightly cron. See the technical
 documentation and install guide for details.
 
-**Edit license and status**
----------------------------
+### Edit license and status
 
 **\[insert image here\]**
 
-> The *Acquisitions* tab includes information about the relevant
-> license. Use the edit license and status link or the matching icon to
-> update the license information. The values for the Licensing Status
-> field can be customized through the Admin page. Changes to the
-> Licensing Status field are record in the History section. It is also
-> possible through the Edit License window to associate the resource
-> with all relevant license records in the Licensing Module. The License
-> Record field includes an auto-complete feature that is populated by
-> the names of all license records in the Licensing Module. See the
-> technical documentation and install guide for the necessary settings
-> in the /admin/configuration.ini file to enable this functionality. A
-> link to each associated license is added to the Helpful Links section
-> of the resource record for quick navigation between modules.
+ The *Acquisitions* tab includes information about the relevant
+ license. Use the edit license and status link or the matching icon to
+ update the license information. The values for the Licensing Status
+ field can be customized through the Admin page. Changes to the
+ Licensing Status field are record in the History section. It is also
+ possible through the Edit License window to associate the resource
+ with all relevant license records in the Licensing Module. The License
+ Record field includes an auto-complete feature that is populated by
+ the names of all license records in the Licensing Module. See the
+ technical documentation and install guide for the necessary settings
+ in the /admin/configuration.ini file to enable this functionality. A
+ link to each associated license is added to the Helpful Links section
+ of the resource record for quick navigation between modules.
 
-**Access**
-----------
+### Access
 
 \[insert image here\]
 
@@ -198,61 +191,57 @@ authentication, simultaneous user limits, authorized sites, etc. The
 access information can be edited by using the edit access information
 link or the matching edit icon.
 
-**Edit access information**
----------------------------
+### Edit access information
 
 **\[insert image here\]**
 
-> The values for all fields on the *Access* tab except for username and
-> password can be customized through the Admin page. The Authorized Site
-> field is intended to indicate the sites or libraries which are
-> permitted to use the resource. Administering Site is intended to
-> indicate the site or library which is responsible for managing the
-> access. The remaining fields provide the technical details of the
-> access.
->
-> Authentication Type is intended to indicate how the resource is
-> authenticated, such as IP or user/password login. Access Method is
-> intended to indicate where the resource is accessed. This field was
-> primarily added to identify resources that were hosted locally,
-> perhaps on a citrix server or in an institutional digital repository,
-> rather than on the publisher or provider’s website. Storage Location
-> is intended for resources that have a physical component such as a CD
-> or hard-drive backup to indicate where the resource is held.
->
-> The Username and Password fields on the *Access* tab are intended for
-> use when the resource is accessed by patrons via a shared username and
-> password login. This is not the login information used for resource
-> administration. Administrative logins are to be stored on the
-> *Accounts* tab.
+ The values for all fields on the *Access* tab except for username and
+ password can be customized through the Admin page. The Authorized Site
+ field is intended to indicate the sites or libraries which are
+ permitted to use the resource. Administering Site is intended to
+ indicate the site or library which is responsible for managing the
+ access. The remaining fields provide the technical details of the
+ access.
 
-Cataloging
-----------
+ Authentication Type is intended to indicate how the resource is
+ authenticated, such as IP or user/password login. Access Method is
+ intended to indicate where the resource is accessed. This field was
+ primarily added to identify resources that were hosted locally,
+ perhaps on a citrix server or in an institutional digital repository,
+ rather than on the publisher or provider’s website. Storage Location
+ is intended for resources that have a physical component such as a CD
+ or hard-drive backup to indicate where the resource is held.
 
-> \[insert image here\]
->
-> The *Cataloging* tab includes data and workflow information related to
-> cataloging the resource, including things such as the URL of where the
-> cataloging records are coming from, cataloging type, cataloging
-> status, and the number of records available and loaded. The cataloging
-> information can be edited by using the edit cataloging details link or
-> the matching edit icon.
+ The Username and Password fields on the *Access* tab are intended for
+ use when the resource is accessed by patrons via a shared username and
+ password login. This is not the login information used for resource
+ administration. Administrative logins are to be stored on the
+ *Accounts* tab.
 
-Edit Cataloging Details
------------------------
+### Cataloging
 
-> The Cataloging Status and Cataloging Type fields can be customized
-> through the Admin page. The Identifier is intended for \[I have no
-> idea\]. The Source URL is intended to be the source of the catalog
-> records used. The Cataloging Status is intended to identify the
-> current status of the cataloging work. Values might include:
-> Completed, Ongoing, and Rejected. The Cataloging Type is intended to
-> indicate the cataloging approach. Values might include: Batch, Manual,
-> and MARCit. Checking the OCLC Holdings checkbox indicates that the
-> resource is made available in OCLC \[not sure??\]
+ \[insert image here\]
 
-**Contacts**
-------------
+ The *Cataloging* tab includes data and workflow information related to
+ cataloging the resource, including things such as the URL of where the
+ cataloging records are coming from, cataloging type, cataloging
+ status, and the number of records available and loaded. The cataloging
+ information can be edited by using the edit cataloging details link or
+ the matching edit icon.
+
+### Edit Cataloging Details
+
+ The Cataloging Status and Cataloging Type fields can be customized
+ through the Admin page. The Identifier is intended for \[I have no
+ idea\]. The Source URL is intended to be the source of the catalog
+ records used. The Cataloging Status is intended to identify the
+ current status of the cataloging work. Values might include:
+ Completed, Ongoing, and Rejected. The Cataloging Type is intended to
+ indicate the cataloging approach. Values might include: Batch, Manual,
+ and MARCit. Checking the OCLC Holdings checkbox indicates that the
+ resource is made available in OCLC \[not sure??\]
+
+### Contacts
 
 \[insert contacts image here\]
 
@@ -268,7 +257,7 @@ Resources Module includes a Contact Role field for each contact
 (support, invoicing, etc). The values for Contact Role can be edited
 through the *Admin* page.
 
-**Account**
+### Account
 
 \[insert image here\]
 
@@ -284,8 +273,7 @@ will be inherited and displayed here on the *Accounts* tab. As with
 Organizations, the Resources Module includes a Login Type field. The
 values for Login Type can be edited through the *Admin* page.
 
-**Attachments**
----------------
+### Attachments
 
 \[insert image here\]
 
@@ -295,15 +283,14 @@ quote which was received from the publisher. The arrow to the right of
 the attachment name ‘American Politics Research Price Quote’ opens the
 file. Multiple attachments are grouped and sorted by attachment type.
 
-> New attachments are added using the add new attachment link. The Name
-> field is intended to be a descriptive name for the attachment. The
-> Details field allows for any additional information that further
-> explains the attachment. The attachment Type field (email, title list,
-> etc) provides context and allows for a way to group the attachments.
-> The values for attachment Type can be edited through the *Admin* page.
+ New attachments are added using the add new attachment link. The Name
+ field is intended to be a descriptive name for the attachment. The
+ Details field allows for any additional information that further
+ explains the attachment. The attachment Type field (email, title list,
+ etc) provides context and allows for a way to group the attachments.
+ The values for attachment Type can be edited through the *Admin* page.
 
-**Routing**
------------
+### Routing
 
 \[insert image here\]
 
@@ -319,12 +306,12 @@ the date at which the task became active. An email is sent to the
 assigned group when the task becomes active alerting the group members
 that they now have a task to perform. The Order Processing task has no
 
-> start date listed in the figure above because it has not yet become
-> active. In this example the Order Processing task will not become
-> active until after the Licensing task is completed. The last column
-> ‘Complete’ will identify the date the task was completed and the
-> person who completed the task. Clicking the ‘mark complete’ link will
-> mark the task as complete.
+ start date listed in the figure above because it has not yet become
+ active. In this example the Order Processing task will not become
+ active until after the Licensing task is completed. The last column
+ ‘Complete’ will identify the date the task was completed and the
+ person who completed the task. Clicking the ‘mark complete’ link will
+ mark the task as complete.
 
 There are two additional steps which happen as part of each workflow
 that are not identified as tasks on the *Routing* tab. An email alert is
@@ -348,8 +335,7 @@ feature is intended to be used in cases where the resource does not need
 to go through a workflow, as in cases where the record is added to the
 system for record keeping purposes only.
 
-**My Queue**
-============
+### My Queue
 
 \[insert my queue image here\]
 
@@ -370,8 +356,7 @@ on their association with a workflow group. Resources are removed from
 the user’s queue once the outstanding workflow task on the resource’s
 *Routing* tab is marked as complete.
 
-**Admin**
-=========
+### Admin
 
 \[insert admin image here\]
 
@@ -379,8 +364,7 @@ The *Admin* page is available only to users with admin privileges. It is
 the page through which field values are customized and through which
 user privilege and access is set.
 
-**Edit User**
--------------
+### Edit User
 
 \[insert edit user here\]
 
@@ -393,11 +377,10 @@ Resources Module is the addition of the ‘View Accounts’ setting. The
 credentials that only a select few users need to see. Checking the ‘View
 Accounts’ box on
 
-> the edit user form will allow the user to see the *Accounts* tab, for
-> all other users the *Accounts* tab will be hidden.
+ the edit user form will allow the user to see the *Accounts* tab, for
+ all other users the *Accounts* tab will be hidden.
 
-**Workflow / User Group**
--------------------------
+### Workflow / User Group
 
 \[insert workflow/user group here\]
 
@@ -410,18 +393,17 @@ this way an alternate workflow could be created for all Free resources
 that would be different than the workflow for Paid resources. New
 workflows are added using the add workflow link.
 
-**Edit workflow**
------------------
+### Edit workflow
 
-> \[insert edit workflow image here\]
->
-> The above figure shows the form through which workflows are created
-> and edited. Here again the workflow being edited is for resources
-> where the Acquisitions Type is ‘Paid’ and the Format is ‘Electronic’.
-> These two fields are required and as such it is required that the
-> values for these fields be defined before creating new workflows. The
-> Resource Type field is optional but when used allows for more granular
-> workflows.
+ \[insert edit workflow image here\]
+
+ The above figure shows the form through which workflows are created
+ and edited. Here again the workflow being edited is for resources
+ where the Acquisitions Type is ‘Paid’ and the Format is ‘Electronic’.
+ These two fields are required and as such it is required that the
+ values for these fields be defined before creating new workflows. The
+ Resource Type field is optional but when used allows for more granular
+ workflows.
 
 The Workflow Steps section allows for the addition of as many steps (or
 tasks as this document also calls them) as desired. Enter step name, the
@@ -438,8 +420,7 @@ parent step assigned will become active as soon as the new record is
 submitted. Workflow steps that have an assigned parent step will become
 active once the parent step is marked as complete.
 
-**Edit user group**
--------------------
+### Edit user group
 
 \[insert edit user group image here\]
 
@@ -450,8 +431,7 @@ active. Users that are assigned to the group will then have the
 in-process resource appear on the *Outstanding Tasks* tabs of their My
 Queue pages.
 
-**Other Admin Settings**
-------------------------
+### Other Admin Settings
 
 \[insert other admin settings here\]
 
@@ -463,8 +443,7 @@ this document. There is however an additional setting managed here on
 the *Admin* page which needs to be described in more detail; Alert
 Settings.
 
-**Alert settings**
-------------------
+### Alert settings
 
 \[insert alert settings here\]
 

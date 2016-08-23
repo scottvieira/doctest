@@ -1,3 +1,7 @@
+Technical Documentation
+-----------------------
+
+
 ## Supported Browsers 
 * Current and recent Firefox, IE, Safari, Seamonkey, Opera, and Chrome versions are all supported 
 * Requires Browser to have Javascript enabled – the CORAL interface relies heavily on AJAX, JQuery and JQuery plugins 

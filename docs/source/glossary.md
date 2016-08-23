@@ -1,3 +1,7 @@
+Glossary
+--------
+
+
 Already on GitHub
 
 [*https://github.com/Coral-erm/Coral/wiki/Glossary-of-Terms-and-Fields*](https://github.com/Coral-erm/Coral/wiki/Glossary-of-Terms-and-Fields)
