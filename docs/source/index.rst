@@ -9,7 +9,7 @@ CORAL Documentation Tutorial
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
    overview
    resources
