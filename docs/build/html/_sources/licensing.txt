@@ -170,19 +170,19 @@ Agreement).
  library to set their own terminology. The software comes with the
  following types included.
 
- *Document Type*:
-
- • Agreement
-
- • Amendment
-
- • Countersigned Agreement
-
- • Internal Acknowledgement
-
- • Order Form
-
- • SERU
+     *Document Type*:
+    
+     • Agreement
+    
+     • Amendment
+    
+     • Countersigned Agreement
+    
+     • Internal Acknowledgement
+    
+     • Order Form
+    
+     • SERU
 
 ### Editing Documents
 
@@ -205,27 +205,28 @@ Agreement).
  again the field is customizable and allows you to enter the types of
  your choice.
 
- Expression Type:
+    Expression Type:
+    
+     • Authorized Users
+    
+     • Confidentiality Clause
+    
+     • Course Packs
+    
+     • eReserves
+    
+     • General Notes
+    
+     • Interlibrary Loan
+    
+     • Jurisdiction
+    
+     • Multi-year Term
+    
+     • Post Cancellation Access
+    
+     • Third Party Archiving
 
- • Authorized Users
-
- • Confidentiality Clause
-
- • Course Packs
-
- • eReserves
-
- • General Notes
-
- • Interlibrary Loan
-
- • Jurisdiction
-
- • Multi-year Term
-
- • Post Cancellation Access
-
- • Third Party Archiving
 
 ### Adding Expressions
 
