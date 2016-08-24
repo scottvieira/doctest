@@ -22,6 +22,16 @@ Contents:
    glossary
    faq
 
+Style Guide
+===========
+
+Contents:
+
+.. toctree::
+   :maxdepth: 3
+
+   styleguide
+
 Indices and tables
 ==================
 
