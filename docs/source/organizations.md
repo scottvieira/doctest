@@ -137,4 +137,3 @@ Privileges
 
 ![image alt text](img/image_6.png)
 
-![Add New User Form](http://img/image_6.png)
