@@ -1,7 +1,9 @@
 Terms Tool User Guide
 ---------------------
 
- ### About the CORAL Terms Tool
+This is a test
+
+### About the CORAL Terms Tool
 
  An add-on to CORAL Licensing, the Terms Tool enables key stakeholders
  such as interlibrary loan staff to view the license terms without
