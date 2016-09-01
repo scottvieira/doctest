@@ -1,8 +1,6 @@
 Terms Tool User Guide
 ---------------------
 
-This is a test
-
 ### About the CORAL Terms Tool
 
  An add-on to CORAL Licensing, the Terms Tool enables key stakeholders
